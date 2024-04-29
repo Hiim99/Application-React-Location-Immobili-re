@@ -1,4 +1,4 @@
-// Defining variables
+@import "../../App.scss";
 $primary-bg: rgb(230, 228, 228);
 $card-gradient: linear-gradient(to right, #ff6b6b, #ff8787);
 $border-radius-large: 25px;
@@ -16,7 +16,7 @@ $font-size-standard: 16px;
 .properties {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; // Changed from 'space-between' to 'flex-start'
+  justify-content: flex-start; 
   gap: $gap-large;
 }
 

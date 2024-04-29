@@ -1,48 +1,57 @@
+@import "../../App.scss";
+$secondary-color: white; 
+$text-color: black;
+$base-padding: 10px;
+$font-large: 20px;
+$font-small: 12px;
+$border-radius-standard: 10px;
+$transition-speed: 0.3s ease;
+
+
 .collapse-container {
-    margin-bottom: 15px; 
+  margin-bottom: 15px;
+}
+
+.collapse-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: $base-padding;
+  cursor: pointer;
+  border-radius: $border-radius-standard;
+
+  .collapse-title {
+    margin: 0;
+    font-size: $font-large;
   }
-  
-  .collapse-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ff6b6b;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 10px;
-  
-    .collapse-title {
-      margin: 0;
-      font-size: 20px; 
-    }
-  
-    .collapse-icon {
-      font-size: 12px; 
-      transition: transform 0.3s ease;
-  
-      &.open {
-        transform: rotate(180deg);
-      }
-    }
-  }
-  
-  .collapse-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    background-color: white;
-    padding: 0 10px;
-    border-radius: 10px;
-  
+
+  .collapse-icon {
+    font-size: $font-small;
+    transition: transform $transition-speed;
+
     &.open {
-      padding: 10px;
-      max-height: 200px;
-    }
-  
-    p {
-      margin: 0;
-      color: black;
+      transform: rotate(180deg);
     }
   }
-  
+}
+
+.collapse-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height $transition-speed;
+  background-color: $secondary-color;
+  padding: 0 $base-padding;
+  border-radius: $border-radius-standard;
+
+  &.open {
+    padding: $base-padding;
+    max-height: 200px;
+  }
+
+  p {
+    margin: 0;
+    color: $text-color;
+  }
+}
