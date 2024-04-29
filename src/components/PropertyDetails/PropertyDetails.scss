@@ -1,0 +1,58 @@
+@import "../../App.scss";
+.head-description{
+    display: flex;
+    justify-content: space-between;
+}
+.property-title{
+    color:#FF6060;
+    font-size: 30px;
+    font-weight: 400;
+
+}
+.property-location{
+    font-size: 18px;
+}
+.head-description{
+    line-height: 10px;
+}
+.host{
+    display: flex;
+    justify-content: space-between;
+}
+.host-name{
+    color:#FF6060;
+    font-size: 25px;
+    font-weight: 350;
+}
+.host-picture {
+    border-radius: 100px;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    margin-left: 10px;
+
+}
+
+
+.tag-buttons{
+    border: 1px solid rgb(174, 172, 172);
+    color: white;
+    width: auto;
+    padding: 0px 15px 0px 15px;
+    height: 25px;
+    background-color:$primary-color ;
+    border-radius: 20px;
+    text-align: center;
+    margin: 5px;
+    font-weight: 700;
+}
+.desc-equi {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .description,
+  .equipments {
+    width: 45%; /* Adjust the width as needed */
+  }
+  
