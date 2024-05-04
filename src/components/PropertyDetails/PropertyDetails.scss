@@ -51,17 +51,10 @@
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
-    gap: 20px; 
     margin-bottom: 20px; 
   }
   
   .description, .equipments {
-    flex-basis: calc(50% - 10px); 
     box-sizing: border-box;
   }
-  .collapse-content {
-    width: 520px;
 
-  }
-  
-  

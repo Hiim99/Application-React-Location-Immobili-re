@@ -31,10 +31,20 @@
       position: absolute;
       color: white;
       font-weight: bold;
-      font-size: 30px;
+      font-size: 25px;
       text-align: center;
       width: 100%;
       z-index: 1; 
     }
   }
-  
+  @media (max-width: 767.98px) {
+   .banner {
+    margin-bottom: 10px; 
+     img{
+      height: 120px;
+    }
+    .banner-text{
+      font-size: 20px;
+    }
+   }
+  }

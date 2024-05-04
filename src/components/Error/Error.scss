@@ -17,3 +17,16 @@ h3{
     text-align: center;
     color: black;
 }
+
+@media (min-width:320px) and (max-width: 767px) {
+    .error {
+        font-size: 120px;
+    }
+    .error-text {
+        font-size: 25px;
+    }
+    h3{
+        font-size: 10px;
+    }
+    
+}
