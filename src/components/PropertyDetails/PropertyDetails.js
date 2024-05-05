@@ -36,12 +36,12 @@ const PropertyDetails = () => {
             ))}
           </div>
             <div className='desc-equi'>
-              <Collapse className='description' title="Description" content={property.description}/>
-              <Collapse className='equipments' title="Equipements"
-                        content={property.equipments.map((equipment, index) => (
-                        <div key={index}>{equipment}</div> 
-                ))}
-              />
+                <Collapse className='description' title="Description" content={property.description}/>
+                <Collapse classContent='equipments' title="Equipements"
+                          content={property.equipments.map((equipment, index) => (
+                          <div key={index}>{equipment}</div> 
+                  ))}
+                /> 
             </div>
             </>
       : <Error/>
