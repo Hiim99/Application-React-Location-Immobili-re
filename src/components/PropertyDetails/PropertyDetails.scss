@@ -53,8 +53,27 @@
     border-radius: 20px;
     text-align: center;
     margin: 5px;
+    margin-bottom: 20px;
     font-weight: 700;
 }
+.host-rating{
+    margin-right: 30px
+}
+.rating{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.star {
+    color: gray; 
+    font-size: 30px;
+    
+  }
+  
+  .star.filled {
+    color: $primary-color; 
+  }
+  
 
   @media (min-width: 768px) and (max-width: 1024px) {
     .head-description{
@@ -64,9 +83,11 @@
 
     }
     .host{
-        flex-direction: row-reverse;
-        justify-content: flex-end;
+        justify-content: end;
 
+    }
+    .rating{
+        margin: 0;
     }
   }
   @media (min-width:320px) and (max-width: 767px) {
@@ -79,9 +100,17 @@
         font-size: 15px;
     }
     .host{
-        flex-direction: row-reverse;
         justify-content: flex-end;
 
+    }
+    .host-rating{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0;
+        justify-content: space-between;
+    }
+    .host-name{
+        font-size: 11px;
     }
   }
   @media (min-width: 768px) {

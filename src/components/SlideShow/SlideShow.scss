@@ -4,6 +4,32 @@
     object-fit: cover;
     margin-top: 25px;
 }
+.property-details-container {
+    position: relative; 
+  
+    .each-slide {
+      position: relative; 
+      img {
+        width: 100%; 
+        display: block; 
+      }
+    }
+  
+    .image-counter {
+      position: absolute;
+      bottom: 40px; 
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      padding: 5px 10px;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 5px;
+      z-index: 10;
+    }
+  }
+  
+  
 
 @media (min-width:320px) and (max-width: 767px) {
     .carousel{
